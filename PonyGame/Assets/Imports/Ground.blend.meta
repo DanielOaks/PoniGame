@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 49db6c4746d3a4245b21ba7d933c892f
-timeCreated: 1441483794
-licenseType: Free
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     100002: Ground
@@ -47,6 +45,10 @@ ModelImporter:
     100078: Water
     100080: SAATerrainDistant
     100082: SAAWalls
+    100084: Circle.001
+    100086: Circle.002
+    100088: Circle.003
+    100090: Hemi
     400000: //RootNode
     400002: Ground
     400004: SAA
@@ -89,6 +91,10 @@ ModelImporter:
     400078: Water
     400080: SAATerrainDistant
     400082: SAAWalls
+    400084: Circle.001
+    400086: Circle.002
+    400088: Circle.003
+    400090: Hemi
     2300000: //RootNode
     2300002: Ground
     2300004: SAA
@@ -131,6 +137,9 @@ ModelImporter:
     2300078: Water
     2300080: SAATerrainDistant
     2300082: SAAWalls
+    2300084: Circle.001
+    2300086: Circle.002
+    2300088: Circle.003
     3300000: //RootNode
     3300002: Ground
     3300004: SAA
@@ -173,6 +182,9 @@ ModelImporter:
     3300078: Water
     3300080: SAATerrainDistant
     3300082: SAAWalls
+    3300084: Circle.001
+    3300086: Circle.002
+    3300088: Circle.003
     4300000: Ground
     4300002: SAA
     4300004: Ground_001
@@ -214,28 +226,37 @@ ModelImporter:
     4300076: Water
     4300078: SAATerrainDistant
     4300080: SAAWalls
+    4300082: Circle.003
+    4300084: Circle.002
+    4300086: Circle.001
     7400000: Default Take
     9500000: //RootNode
+  externalObjects: {}
   materials:
     importMaterials: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -243,13 +264,18 @@ ModelImporter:
     globalScale: 0.4
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -259,9 +285,11 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
+    normalCalculationMode: 0
   importAnimation: 0
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -272,7 +300,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
   humanoidOversampling: 1

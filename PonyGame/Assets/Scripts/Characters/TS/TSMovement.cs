@@ -143,8 +143,10 @@ public class TSMovement : MonoBehaviour
 
     /*
      * Moves the character based on the provided input
+     * TODO(dan): this fn. was left half-written, I'm guessing it's a
+     *  cleaned up / refactored version of the below function?
      */
-    public void ExecuteMovement(MoveInputs inputs)
+    public void ExecuteMovementAA(MoveInputs inputs)
     {
         bool isStaggered = Utils.InDuration(m_staggerTime, staggerDuration);
         
@@ -183,7 +185,7 @@ public class TSMovement : MonoBehaviour
     /*
      * Moves the character based on the provided input
      */
-    public void ExecuteMovementAA(MoveInputs inputs)
+    public void ExecuteMovement(MoveInputs inputs)
     {
         bool isStaggered = Utils.InDuration(m_staggerTime, staggerDuration);
 

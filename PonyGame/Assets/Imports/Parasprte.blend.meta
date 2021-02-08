@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 897591897f68edd48a7af064e97a7937
-timeCreated: 1442461267
-licenseType: Free
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: eye_l
     100002: eye_r
@@ -23,6 +21,29 @@ ModelImporter:
     100030: wing1_r
     100032: wing2_l
     100034: wing2_r
+    100036: eye.l
+    100038: eye.l_end
+    100040: eye.r
+    100042: eye.r_end
+    100044: leg1.l
+    100046: leg1.r
+    100048: leg2.l
+    100050: leg2.l_end
+    100052: leg2.r
+    100054: leg2.r_end
+    100056: mouth.l
+    100058: mouth.l_end
+    100060: mouth.r
+    100062: mouth.r_end
+    100064: mouth2_end
+    100066: wing1.l
+    100068: wing1.l_end
+    100070: wing1.r
+    100072: wing1.r_end
+    100074: wing2.l
+    100076: wing2.l_end
+    100078: wing2.r
+    100080: wing2.r_end
     400000: eye_l
     400002: eye_r
     400004: Head
@@ -41,6 +62,29 @@ ModelImporter:
     400030: wing1_r
     400032: wing2_l
     400034: wing2_r
+    400036: eye.l
+    400038: eye.l_end
+    400040: eye.r
+    400042: eye.r_end
+    400044: leg1.l
+    400046: leg1.r
+    400048: leg2.l
+    400050: leg2.l_end
+    400052: leg2.r
+    400054: leg2.r_end
+    400056: mouth.l
+    400058: mouth.l_end
+    400060: mouth.r
+    400062: mouth.r_end
+    400064: mouth2_end
+    400066: wing1.l
+    400068: wing1.l_end
+    400070: wing1.r
+    400072: wing1.r_end
+    400074: wing2.l
+    400076: wing2.l_end
+    400078: wing2.r
+    400080: wing2.r_end
     4300000: Sphere
     7400000: Default Take
     7400002: bite
@@ -49,26 +93,37 @@ ModelImporter:
     7400008: Bite
     9500000: //RootNode
     13700000: Sphere
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texture
+    second: {fileID: 2100000, guid: 24cc6ace81b0b3b4e821c30ee10a6026, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: Bite
@@ -268,13 +323,18 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -284,9 +344,11 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -297,7 +359,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1

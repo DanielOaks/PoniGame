@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 3e7489e9b0d439f43934f39f768108b8
-timeCreated: 1441564471
-licenseType: Free
 ModelImporter:
-  serializedVersion: 18
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     100002: CmcTreeHouseLeaves1_MESH
@@ -54,6 +52,28 @@ ModelImporter:
     100092: CmcTreeHouseLeaves2_MESH_005
     100094: CmcTreeHouseLeaves2_MESH_006
     100096: CmcTreeHouseLeaves2_MESH_007
+    100098: CmcTreeHouseLeaves1_MESH.001
+    100100: CmcTreeHouseLeaves1_MESH.002
+    100102: CmcTreeHouseLeaves1_MESH.003
+    100104: CmcTreeHouseLeaves1_MESH.004
+    100106: CmcTreeHouseLeaves1_MESH.005
+    100108: CmcTreeHouseLeaves1_MESH.006
+    100110: CmcTreeHouseLeaves1_MESH.007
+    100112: CmcTreeHouseLeaves1_MESH.008
+    100114: CmcTreeHouseLeaves1_MESH.009
+    100116: CmcTreeHouseLeaves1_MESH.010
+    100118: CmcTreeHouseLeaves1_MESH.011
+    100120: CmcTreeHouseLeaves1_MESH.012
+    100122: CmcTreeHouseLeaves1_MESH.013
+    100124: CmcTreeHouseLeaves1_MESH.014
+    100126: CmcTreeHouseLeaves1_MESH.015
+    100128: CmcTreeHouseLeaves1_MESH.016
+    100130: CmcTreeHouseLeaves1_MESH.017
+    100132: CmcTreeHouseLeaves1_MESH.018
+    100134: CmcTreeHouseLeaves1_MESH.019
+    100136: CmcTreeHouseLeaves2_MESH.001
+    100138: CmcTreeHouseLeaves2_MESH.002
+    100140: CmcTreeHouseLeaves2_MESH.003
     400000: //RootNode
     400002: CmcTreeHouseLeaves1_MESH
     400004: CmcTreeHouseLeaves2_MESH
@@ -103,6 +123,28 @@ ModelImporter:
     400092: CmcTreeHouseLeaves2_MESH_005
     400094: CmcTreeHouseLeaves2_MESH_006
     400096: CmcTreeHouseLeaves2_MESH_007
+    400098: CmcTreeHouseLeaves1_MESH.001
+    400100: CmcTreeHouseLeaves1_MESH.002
+    400102: CmcTreeHouseLeaves1_MESH.003
+    400104: CmcTreeHouseLeaves1_MESH.004
+    400106: CmcTreeHouseLeaves1_MESH.005
+    400108: CmcTreeHouseLeaves1_MESH.006
+    400110: CmcTreeHouseLeaves1_MESH.007
+    400112: CmcTreeHouseLeaves1_MESH.008
+    400114: CmcTreeHouseLeaves1_MESH.009
+    400116: CmcTreeHouseLeaves1_MESH.010
+    400118: CmcTreeHouseLeaves1_MESH.011
+    400120: CmcTreeHouseLeaves1_MESH.012
+    400122: CmcTreeHouseLeaves1_MESH.013
+    400124: CmcTreeHouseLeaves1_MESH.014
+    400126: CmcTreeHouseLeaves1_MESH.015
+    400128: CmcTreeHouseLeaves1_MESH.016
+    400130: CmcTreeHouseLeaves1_MESH.017
+    400132: CmcTreeHouseLeaves1_MESH.018
+    400134: CmcTreeHouseLeaves1_MESH.019
+    400136: CmcTreeHouseLeaves2_MESH.001
+    400138: CmcTreeHouseLeaves2_MESH.002
+    400140: CmcTreeHouseLeaves2_MESH.003
     2300000: CmcTreeHouseLeaves1_MESH
     2300002: CmcTreeHouseLeaves2_MESH
     2300004: CmcTreeHouseLeaves1_MESH_001
@@ -151,6 +193,28 @@ ModelImporter:
     2300090: CmcTreeHouseLeaves2_MESH_005
     2300092: CmcTreeHouseLeaves2_MESH_006
     2300094: CmcTreeHouseLeaves2_MESH_007
+    2300096: CmcTreeHouseLeaves1_MESH.001
+    2300098: CmcTreeHouseLeaves1_MESH.002
+    2300100: CmcTreeHouseLeaves1_MESH.003
+    2300102: CmcTreeHouseLeaves1_MESH.004
+    2300104: CmcTreeHouseLeaves1_MESH.005
+    2300106: CmcTreeHouseLeaves1_MESH.006
+    2300108: CmcTreeHouseLeaves1_MESH.007
+    2300110: CmcTreeHouseLeaves1_MESH.008
+    2300112: CmcTreeHouseLeaves1_MESH.009
+    2300114: CmcTreeHouseLeaves1_MESH.010
+    2300116: CmcTreeHouseLeaves1_MESH.011
+    2300118: CmcTreeHouseLeaves1_MESH.012
+    2300120: CmcTreeHouseLeaves1_MESH.013
+    2300122: CmcTreeHouseLeaves1_MESH.014
+    2300124: CmcTreeHouseLeaves1_MESH.015
+    2300126: CmcTreeHouseLeaves1_MESH.016
+    2300128: CmcTreeHouseLeaves1_MESH.017
+    2300130: CmcTreeHouseLeaves1_MESH.018
+    2300132: CmcTreeHouseLeaves1_MESH.019
+    2300134: CmcTreeHouseLeaves2_MESH.001
+    2300136: CmcTreeHouseLeaves2_MESH.002
+    2300138: CmcTreeHouseLeaves2_MESH.003
     3300000: CmcTreeHouseLeaves1_MESH
     3300002: CmcTreeHouseLeaves2_MESH
     3300004: CmcTreeHouseLeaves1_MESH_001
@@ -199,6 +263,28 @@ ModelImporter:
     3300090: CmcTreeHouseLeaves2_MESH_005
     3300092: CmcTreeHouseLeaves2_MESH_006
     3300094: CmcTreeHouseLeaves2_MESH_007
+    3300096: CmcTreeHouseLeaves1_MESH.001
+    3300098: CmcTreeHouseLeaves1_MESH.002
+    3300100: CmcTreeHouseLeaves1_MESH.003
+    3300102: CmcTreeHouseLeaves1_MESH.004
+    3300104: CmcTreeHouseLeaves1_MESH.005
+    3300106: CmcTreeHouseLeaves1_MESH.006
+    3300108: CmcTreeHouseLeaves1_MESH.007
+    3300110: CmcTreeHouseLeaves1_MESH.008
+    3300112: CmcTreeHouseLeaves1_MESH.009
+    3300114: CmcTreeHouseLeaves1_MESH.010
+    3300116: CmcTreeHouseLeaves1_MESH.011
+    3300118: CmcTreeHouseLeaves1_MESH.012
+    3300120: CmcTreeHouseLeaves1_MESH.013
+    3300122: CmcTreeHouseLeaves1_MESH.014
+    3300124: CmcTreeHouseLeaves1_MESH.015
+    3300126: CmcTreeHouseLeaves1_MESH.016
+    3300128: CmcTreeHouseLeaves1_MESH.017
+    3300130: CmcTreeHouseLeaves1_MESH.018
+    3300132: CmcTreeHouseLeaves1_MESH.019
+    3300134: CmcTreeHouseLeaves2_MESH.001
+    3300136: CmcTreeHouseLeaves2_MESH.002
+    3300138: CmcTreeHouseLeaves2_MESH.003
     4300000: CmcTreeHouseLeaves2_MESH
     4300002: CmcTreeHouseLeaves1_MESH
     4300004: CmcTreeHouseLeaves2_MESH_007
@@ -247,41 +333,85 @@ ModelImporter:
     4300090: CmcTreeHouseLeaves1_MESH_003
     4300092: CmcTreeHouseLeaves1_MESH_002
     4300094: CmcTreeHouseLeaves1_MESH_001
+    4300096: CmcTreeHouseLeaves1_MESH.019
+    4300098: CmcTreeHouseLeaves1_MESH.018
+    4300100: CmcTreeHouseLeaves1_MESH.017
+    4300102: CmcTreeHouseLeaves1_MESH.016
+    4300104: CmcTreeHouseLeaves1_MESH.015
+    4300106: CmcTreeHouseLeaves1_MESH.014
+    4300108: CmcTreeHouseLeaves1_MESH.013
+    4300110: CmcTreeHouseLeaves1_MESH.012
+    4300112: CmcTreeHouseLeaves1_MESH.011
+    4300114: CmcTreeHouseLeaves1_MESH.010
+    4300116: CmcTreeHouseLeaves1_MESH.009
+    4300118: CmcTreeHouseLeaves1_MESH.008
+    4300120: CmcTreeHouseLeaves1_MESH.007
+    4300122: CmcTreeHouseLeaves1_MESH.006
+    4300124: CmcTreeHouseLeaves1_MESH.005
+    4300126: CmcTreeHouseLeaves1_MESH.004
+    4300128: CmcTreeHouseLeaves1_MESH.003
+    4300130: CmcTreeHouseLeaves1_MESH.002
+    4300132: CmcTreeHouseLeaves1_MESH.001
+    4300134: CmcTreeHouseLeaves2_MESH.003
+    4300136: CmcTreeHouseLeaves2_MESH.002
+    4300138: CmcTreeHouseLeaves2_MESH.001
     7400000: Default Take
     9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CmcCmcTreeHouseLeaves1_MAT
+    second: {fileID: 2100000, guid: 64a9783c206068843882a8df67fa84ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CmcCmcTreeHouseLeaves2_MAT
+    second: {fileID: 2100000, guid: 6151c4f41badf1f40a00aab421400c8f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .0799999982
+    globalScale: 0.08
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -289,24 +419,30 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

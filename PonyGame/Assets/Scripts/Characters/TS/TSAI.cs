@@ -23,7 +23,7 @@ public class TSAI : MonoBehaviour
     public float runDistance = 1.5f;
     
 
-    private NavMeshAgent m_agent;
+    private UnityEngine.AI.NavMeshAgent m_agent;
 
     private List<Vector3> m_path;
     private Transform m_player;
@@ -33,7 +33,7 @@ public class TSAI : MonoBehaviour
 
 	void Start()
     {
-        m_agent = GetComponent<NavMeshAgent>();
+        m_agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 
         GameController.CharacterChanged += SetPlayer;
 
@@ -57,7 +57,7 @@ public class TSAI : MonoBehaviour
         {
             if (m_player && (m_path.Count == 0 || Vector3.Distance(m_player.position, m_path[m_path.Count - 1]) > newPathTolerance))
             {
-                NavMeshPath path = new NavMeshPath();
+                UnityEngine.AI.NavMeshPath path = new UnityEngine.AI.NavMeshPath();
 
                 try
                 {
