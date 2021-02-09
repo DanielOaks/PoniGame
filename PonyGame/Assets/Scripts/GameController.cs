@@ -14,6 +14,8 @@ public class GameController : MonoBehaviour
 
     private static List<Transform> m_characters;
 
+    private static bool m_isSlowMo = false;
+
     private static Transform m_player;
     public static Transform Player
     {
@@ -42,6 +44,25 @@ public class GameController : MonoBehaviour
     {
         m_characters = new List<Transform>();
         m_cameraRig = cameraRig;
+    }
+
+    public static void StartSlowMo()
+    {
+        m_isSlowMo = true;
+        SlowMoChangeTimescale();
+    }
+
+    public static void EndSlowMo()
+    {
+        m_isSlowMo = false;
+        SlowMoChangeTimescale();
+    }
+
+    private static void SlowMoChangeTimescale()
+    {
+        Time.timeScale = m_isSlowMo ? .2f : 1;
+        Time.fixedDeltaTime = Time.timeScale * .02f;
+        Time.maximumDeltaTime = Time.timeScale * .15f;
     }
 
     public static void AddCharacter(Transform transform)

@@ -17,13 +17,19 @@ public class MainUI : MonoBehaviour
     private static bool m_lockCursor = true;
     public static bool IsCursorLocked
     {
-        get { return m_lockCursor; }
+        get { return m_lockCursor && !m_isSpellWheelOpen; }
     }
 
     private static bool m_isMenuOpen = false;
     public static bool IsMenuOpen
     {
         get { return IsMenuOpen; }
+    }
+
+    private static bool m_isSpellWheelOpen = false;
+    public static bool IsSpellWheelOpen
+    {
+        get { return m_isSpellWheelOpen; }
     }
 
     private void Start()
@@ -43,6 +49,15 @@ public class MainUI : MonoBehaviour
         if (Controls.JustDown(GameButton.Menu))
         {
             m_isMenuOpen = !m_isMenuOpen;
+        }
+
+        if (Controls.JustDown(GameButton.SpellWheel))
+        {
+            m_isSpellWheelOpen = true;
+            GameController.StartSlowMo();
+        } else if (Controls.JustUp(GameButton.SpellWheel)) {
+            m_isSpellWheelOpen = false;
+            GameController.EndSlowMo();
         }
         
         Controls.IsMuted = m_isMenuOpen;

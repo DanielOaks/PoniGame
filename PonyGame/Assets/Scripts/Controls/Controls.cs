@@ -8,13 +8,13 @@ using InputController;
 // Actions needing a key binding.
 public enum GameButton
 {
-    Menu, Walk, WalkToggle, Jump, Lock, Primary, Secondary, TK, SwitchCharacter, ConsiderSuicide,
+    Menu, Walk, WalkToggle, Jump, Lock, Primary, Secondary, TK, SwitchCharacter, ConsiderSuicide, SpellWheel,
 }
 
 // Actions needing an axis binding.
 public enum GameAxis
 {
-    LookX, LookY, LockX, LockY, MoveX, MoveY, Zoom, TKDistance, TKRotateX, TKRotateY
+    LookX, LookY, LockX, LockY, MoveX, MoveY, Zoom, TKDistance, TKRotateX, TKRotateY,
 }
 
 [RequireComponent(typeof(ControlsEarlyUpdate))]
@@ -89,6 +89,11 @@ public class Controls : MonoBehaviour
         {
             new KeyButton(KeyCode.Escape),
             new JoystickButton(GamepadButton.Start)
+        }));
+        m_buttons.Add(GameButton.SpellWheel, new BufferedButton(false, new List<ButtonSource>
+        {
+            new KeyButton(KeyCode.Mouse2),
+            new JoystickButton(GamepadButton.LStick)
         }));
         m_buttons.Add(GameButton.Walk, new BufferedButton(true, new List<ButtonSource>
         {

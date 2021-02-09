@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class ScreenCenterDot : MonoBehaviour
+public class SpellWheelBG : MonoBehaviour
 {
     private Image m_image;
     
@@ -13,6 +13,6 @@ public class ScreenCenterDot : MonoBehaviour
 	
 	void Update ()
     {
-        m_image.enabled = GameController.CameraRig.LockTarget == null && !(GameController.IsGameOver || MainUI.IsSpellWheelOpen);
+        m_image.enabled = !GameController.IsGameOver && MainUI.IsSpellWheelOpen;
     }
 }
