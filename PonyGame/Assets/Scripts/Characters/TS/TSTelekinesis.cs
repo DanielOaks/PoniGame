@@ -238,7 +238,7 @@ public class TSTelekinesis : MonoBehaviour
 
     private float GetMassFactor()
     {
-        return m_tkTarget != null ? (m_massFactor * Mathf.Max(m_tkTarget.Rigidbody.mass, 0.5f)) + (1 - m_massFactor) : 1;
+        return m_tkTarget != null ? (m_massFactor * Mathf.Max(m_tkTarget.Mass, 0.5f)) + (1 - m_massFactor) : 1;
     }
 
     private void OnTargetCollision()

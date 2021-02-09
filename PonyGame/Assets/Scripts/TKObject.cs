@@ -35,6 +35,18 @@ public class TKObject : MonoBehaviour
         set { m_isGrabbed = value; }
     }
 
+    [SerializeField]
+    private bool m_overrideMassForMagic = false;
+
+    [SerializeField]
+    [Tooltip("This is how heavy the magic system sees this object as.")]
+    [Min(0)]
+    private float m_magicalMass;
+    public float Mass
+    {
+        get { return m_overrideMassForMagic ? m_magicalMass : Rigidbody.mass; }
+    }
+
     private void Start()
     {
         m_collisionNotifier = m_rigidbody.gameObject.AddComponent<CollisionNotifier>();
