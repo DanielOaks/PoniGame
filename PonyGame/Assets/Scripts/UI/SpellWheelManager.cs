@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class SpellWheelManager : MonoBehaviour
 {
     private bool m_isOpen = false;
+    private string m_lastSpellSelected;
     private Vector2 m_centreVector;
     private Dictionary<string,Vector2> m_spellVectorsNorm = new Dictionary<string,Vector2>();
     private Dictionary<string,GameObject> m_spellGameObjects = new Dictionary<string,GameObject>();
@@ -28,7 +29,7 @@ public class SpellWheelManager : MonoBehaviour
         // m_image.enabled = !GameController.IsGameOver && MainUI.IsSpellWheelOpen;
         bool newIsOpen = !GameController.IsGameOver && MainUI.IsSpellWheelOpen;
         if (!m_isOpen && newIsOpen) {
-            // opened
+            // just opened
             foreach (GameObject entityGO in GameObject.FindGameObjectsWithTag("SpellIcon")) {
                 SpellWheelSpellIcon entity = entityGO.GetComponent(typeof(SpellWheelSpellIcon)) as SpellWheelSpellIcon;
                 Image entityImage = entityGO.GetComponent(typeof(Image)) as Image;
@@ -38,7 +39,8 @@ public class SpellWheelManager : MonoBehaviour
                 }
             }
         } else if (m_isOpen && !newIsOpen) {
-            // closed
+            // just closed
+            m_magic.CurrentSpell = m_lastSpellSelected;
         }
         m_isOpen = newIsOpen;
 
@@ -68,10 +70,10 @@ public class SpellWheelManager : MonoBehaviour
                 SpellWheelSpellIcon entityE = m_spellGameObjects[item.Key].GetComponent(typeof(SpellWheelSpellIcon)) as SpellWheelSpellIcon;
                 entityImageE.sprite = entityE.DeactiveIcon;
             }
-            Debug.Log(lowestDistance);
             Image entityImage = m_spellGameObjects[lowestName].GetComponent(typeof(Image)) as Image;
             SpellWheelSpellIcon entity = m_spellGameObjects[lowestName].GetComponent(typeof(SpellWheelSpellIcon)) as SpellWheelSpellIcon;
             entityImage.sprite = entity.ActiveIcon;
+            m_lastSpellSelected = lowestName;
         }
     }
 }
