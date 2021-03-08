@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class SpellWheelBG : MonoBehaviour
+public class SpellWheelImage : MonoBehaviour
 {
     private Image m_image;
     

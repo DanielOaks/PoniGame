@@ -40,6 +40,8 @@ public class TSMagic : MonoBehaviour
         set { m_isUsingMagic = value; }
     }
 
+    public string CurrentSpell = "tk";
+
     private void Start()
     {
         m_hornMagic.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
