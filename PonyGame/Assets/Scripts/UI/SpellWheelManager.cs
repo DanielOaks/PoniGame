@@ -12,6 +12,10 @@ public class SpellWheelManager : MonoBehaviour
     private Dictionary<string,GameObject> m_spellGameObjects = new Dictionary<string,GameObject>();
     private TSMagic m_magic;
     private Vector2 m_lastVectorNorm;
+    [SerializeField]
+    [Tooltip("Where does the spell wheel stop counting input? This helps us throw out garbage mouse input at low mouse speeds. Generally falls within 0.1 to 0.9")]
+    [Min(0)]
+    private float directionDeadzone = 0.1F;
 
     void Start ()
     {
@@ -50,7 +54,7 @@ public class SpellWheelManager : MonoBehaviour
             Vector2 padVector = new Vector2(Input.GetAxis("R_XAxis"), -Input.GetAxis("R_YAxis"));
             Vector2 mouseVector = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
             Vector2 newVector = padVector.magnitude > 0 ? padVector : mouseVector;
-            if (newVector.magnitude > 0) {
+            if (newVector.magnitude > directionDeadzone) {
                 m_lastVectorNorm = newVector.normalized;
             }
 
