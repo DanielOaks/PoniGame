@@ -10,6 +10,7 @@ public class SpellWheelManager : MonoBehaviour
     private Vector2 m_centreVector;
     private Dictionary<string,Vector2> m_spellVectorsNorm = new Dictionary<string,Vector2>();
     private Dictionary<string,GameObject> m_spellGameObjects = new Dictionary<string,GameObject>();
+    private TSTelekinesis m_tk;
     private TSMagic m_magic;
     private Vector2 m_lastVectorNorm;
     [SerializeField]
@@ -20,6 +21,7 @@ public class SpellWheelManager : MonoBehaviour
     void Start ()
     {
         m_magic = FindObjectOfType(typeof(TSMagic)) as TSMagic;
+        m_tk = FindObjectOfType(typeof(TSTelekinesis)) as TSTelekinesis;
         m_centreVector = new Vector2(transform.position.x, transform.position.y);
         foreach (GameObject entityGO in GameObject.FindGameObjectsWithTag("SpellIcon")) {
             SpellWheelSpellIcon entity = entityGO.GetComponent(typeof(SpellWheelSpellIcon)) as SpellWheelSpellIcon;
@@ -44,6 +46,13 @@ public class SpellWheelManager : MonoBehaviour
             }
         } else if (m_isOpen && !newIsOpen) {
             // just closed
+
+            // stop old spell
+            if (m_magic.CurrentSpell == "tk") {
+                m_tk.StopTK();
+            }
+
+            // set new spell
             m_magic.CurrentSpell = m_lastSpellSelected;
         }
         m_isOpen = newIsOpen;

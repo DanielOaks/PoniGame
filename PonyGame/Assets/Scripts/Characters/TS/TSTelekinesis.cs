@@ -87,7 +87,7 @@ public class TSTelekinesis : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Controls.JustDown(GameButton.TK) && (m_magic.IsUsingMagic != (m_tkTarget == null)))
+        if (m_magic.CurrentSpell == "tk" && Controls.JustDown(GameButton.TK) && (m_magic.IsUsingMagic != (m_tkTarget == null)))
         {
             TKObject newTarget = (m_tkTarget == null) ? FindTKTarget() : null;
             if (newTarget != null)
@@ -221,7 +221,7 @@ public class TSTelekinesis : MonoBehaviour
         return mostSuitable;
     }
 
-    private void StopTK()
+    public void StopTK()
     {
         if (m_tkTarget != null)
         {
