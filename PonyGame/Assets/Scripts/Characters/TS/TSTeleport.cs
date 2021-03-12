@@ -8,7 +8,7 @@ public class TSTeleport : MonoBehaviour
     private LayerMask m_lineOfSightBlocking;
 
     [SerializeField]
-    [Range(0, 2)]
+    [Min(0)]
     private float m_minDistance = 1f;
 
     [SerializeField]
@@ -44,7 +44,9 @@ public class TSTeleport : MonoBehaviour
         foreach (var hit in hits)
         {
             // only return the first hit lmao
-            return hit.point;
+            if (m_minDistance < Vector3.Distance(transform.position, hit.point)) {
+                return hit.point;
+            }
         }
         return null;
     }

@@ -53,7 +53,7 @@ public class TSMagic : MonoBehaviour
         m_hornEmission = particleSystem.emission;
 
         float scale = m_hornMagic.bounds.extents.magnitude;
-        m_baseEmissionRate = m_hornEmission.rate.constant * scale;
+        m_baseEmissionRate = m_hornEmission.rateOverTime.constant * scale;
         m_hornMagic.material.SetFloat("_Displacement", m_hornMagic.material.GetFloat("_Displacement") * scale);
         m_hornMagic.material.SetFloat("_Amplitude", m_hornMagic.material.GetFloat("_Amplitude") * scale);
         m_hornMagic.material.SetFloat("_SpatialFrequency", m_hornMagic.material.GetFloat("_SpatialFrequency") / scale);
@@ -80,6 +80,6 @@ public class TSMagic : MonoBehaviour
         {
             m_hornMagic.material.SetColor("_Color", m_hornMagicColor);
         }
-        m_hornEmission.rate = m_emissionFraction * m_baseEmissionRate;
+        m_hornEmission.rateOverTime = m_emissionFraction * m_baseEmissionRate;
     }
 }

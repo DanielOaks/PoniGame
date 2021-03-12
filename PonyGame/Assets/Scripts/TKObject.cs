@@ -61,7 +61,7 @@ public class TKObject : MonoBehaviour
         m_emission = particleSystem.emission;
 
         float scale = m_renderer.bounds.extents.magnitude;
-        m_baseEmissionRate = m_emission.rate.constant * scale;
+        m_baseEmissionRate = m_emission.rateOverTime.constant * scale;
         m_renderer.material.SetFloat("_Displacement", m_renderer.material.GetFloat("_Displacement") * scale);
         m_renderer.material.SetFloat("_Amplitude", m_renderer.material.GetFloat("_Amplitude") * scale);
         m_renderer.material.SetFloat("_SpatialFrequency", m_renderer.material.GetFloat("_SpatialFrequency") / scale);
@@ -82,7 +82,7 @@ public class TKObject : MonoBehaviour
         {
             m_renderer.material.SetColor("_Color", m_color);
         }
-        m_emission.rate = m_emissionFraction * m_baseEmissionRate;
+        m_emission.rateOverTime = m_emissionFraction * m_baseEmissionRate;
     }
 
     public void SetColor(Color color)
